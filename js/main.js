@@ -108,3 +108,16 @@ function scrollAppear() {
 }
 
 window.addEventListener('scroll', scrollAppear)
+
+// layer
+let layer = document.querySelector(".layer");
+let imgcontainer = document.querySelector(".imageContainer");
+
+
+imgcontainer.addEventListener("mouseover", function mouseOver() {
+    layer.style.width = "0%";
+});
+
+imgcontainer.addEventListener("mouseleave", function mouseleave() {
+    layer.style.width = "100%";
+});
